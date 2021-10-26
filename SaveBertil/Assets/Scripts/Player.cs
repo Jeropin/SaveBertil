@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static int score = 0;
     public class player
     {
-        public int score;
         public int health;
         public int bullets;
 
-        public player(int sco, int hea, int bul)   
+        public player( int hea, int bul)   
         {
-            score = sco;
             health = hea;
             bullets = bul;
         }
 
         public player()
         {
-            score = 0;
             health = 5;
             bullets = 5;
         }

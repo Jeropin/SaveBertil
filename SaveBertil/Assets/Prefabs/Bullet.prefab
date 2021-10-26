@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1513625305}
   - component: {fileID: -8826940830605111077}
   - component: {fileID: 300773426373361655}
-  - component: {fileID: 6943726137272917032}
+  - component: {fileID: 1110271134631967495}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Projectile
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4642dd22576034d8846c478ee23e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6943726137272917032
+--- !u!114 &1110271134631967495
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,4 +185,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e6bca10c7d0b6848bf101528eeea6c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 7379736976706492963, guid: 594cddb9c0e86f242a09d32b4e2e1733, type: 3}

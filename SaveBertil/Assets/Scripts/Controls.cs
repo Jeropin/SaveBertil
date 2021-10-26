@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+//I think this is pretty bad in terms of coding the movement since it is all over the place. Spaghetti.
 public class Controls : MonoBehaviour
 {
     public GameObject bullet;
@@ -16,7 +17,7 @@ public class Controls : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    void Update()
     {
         if (Input.GetKey("left") || Input.GetKey("right"))
         {
@@ -34,12 +35,6 @@ public class Controls : MonoBehaviour
         }
     }
 
-    void shooting()
-    {
-        Instantiate(bullet, transform.position + new Vector3(0.0f,1.0f,0.0f), transform.rotation);
-        Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-    }
-
     private void FixedUpdate()
     {
         movePlayer(movement);
@@ -51,6 +46,13 @@ public class Controls : MonoBehaviour
         }
     }
 
+    //Spawns a bullet
+    void shooting()
+    {
+        Instantiate(bullet, transform.position + new Vector3(0.0f,1.0f,0.0f), transform.rotation);
+    }
+
+    //Controls the player
     void movePlayer(Vector2 direction)
     {
         if (move)
