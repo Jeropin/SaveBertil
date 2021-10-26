@@ -10,4 +10,4 @@ public class DisplayScore : MonoBehaviour
     {
         text.text = Player.score.ToString();
     }
-}
+}   

@@ -5,6 +5,8 @@ public class ObjectSpawner : MonoBehaviour
 {
     public GameObject water;
     public GameObject salt;
+    public GameObject finishLine;
+    float time = 15;
     float spawnTime;
     float location;
     int which;
@@ -12,8 +14,9 @@ public class ObjectSpawner : MonoBehaviour
     void Start()
     {
         Invoke("spawn", 0.0f);
+        Invoke("finish", time);
     }
-    //Instantiate(water, new Vector3(location, 5, 0), Quaternion.identity);
+
     void spawn()
     {
         spawnTime = Random.Range(0.0f, 0.5f);
@@ -32,4 +35,9 @@ public class ObjectSpawner : MonoBehaviour
         Invoke("spawn", spawnTime);
     }
 
+    void finish()
+    {
+        finishLine.SetActive(true);
+        Destroy(this.gameObject);
+    }
 }
