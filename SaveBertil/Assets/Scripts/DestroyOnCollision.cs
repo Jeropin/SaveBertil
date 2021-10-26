@@ -5,6 +5,9 @@ public class DestroyOnCollision : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Object.Destroy(collision.gameObject);
+        if (collision.gameObject.tag == "Collectible" || collision.gameObject.tag == "Enemy")
+        {
+            Object.Destroy(collision.gameObject);
+        }
     }
 }
