@@ -8,8 +8,6 @@ public class HealthEvent : MonoBehaviour
     private Slider slider;
     private Player player;
 
-
-
     void Start()
     {
         player = playerObject.GetComponent<Player>();
@@ -19,5 +17,10 @@ public class HealthEvent : MonoBehaviour
     void Update()
     {
         slider.value = player.bertil.health;
+
+        if(player.bertil.health == 0)
+        {
+            playerObject.GetComponent<SceneHandler>().gameOver();
+        }
     }
 }

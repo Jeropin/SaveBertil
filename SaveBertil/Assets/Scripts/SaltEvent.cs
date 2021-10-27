@@ -17,7 +17,6 @@ public class SaltEvent : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             player.bertil.health--;
-            Debug.Log(player.bertil.health);
         }
     }
 }

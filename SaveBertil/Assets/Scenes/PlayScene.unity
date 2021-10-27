@@ -403,6 +403,7 @@ MonoBehaviour:
   water: {fileID: 4841112277774781992, guid: 426c1f0605561cd48ae71dd87bb24f8b, type: 3}
   salt: {fileID: 2270333958267286863, guid: 969303bd268b3234c9a92ee4d00a2e18, type: 3}
   finishLine: {fileID: 1489249422}
+  time: 60
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,6 +668,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7379736976706492972, guid: 594cddb9c0e86f242a09d32b4e2e1733, type: 3}
   m_PrefabInstance: {fileID: 7379736976774473035}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1577557437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577557436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21421db96e616b47969cb887fce8286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1883834052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1050,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: FinishLine
       objectReference: {fileID: 0}
+    - target: {fileID: 6277780936476886228, guid: c6eae8aa4f8cc804eb29d345c7cee5b7, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1577557436}
     - target: {fileID: 6277780936476886230, guid: c6eae8aa4f8cc804eb29d345c7cee5b7, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -6,7 +6,7 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject water;
     public GameObject salt;
     public GameObject finishLine;
-    float time = 15;
+    public float time = 15;
     float spawnTime;
     float location;
     int which;

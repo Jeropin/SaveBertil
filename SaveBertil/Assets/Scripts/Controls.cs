@@ -5,15 +5,19 @@ using UnityEngine;
 public class Controls : MonoBehaviour
 {
     public GameObject bullet;
-    public float speed = 10;
     public Rigidbody2D rb;
     public Vector2 movement;
+    Player player;
+    public float speed = 10;
+    int maxBullet;
     bool move = false;
     bool shoot = false;
 
 
     void Start()
     {
+        player = GetComponent<Player>();
+        maxBullet = player.bertil.bullets;
         rb = this.GetComponent<Rigidbody2D>();
     }
 
@@ -35,7 +39,7 @@ public class Controls : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         movePlayer(movement);
 
@@ -45,11 +49,22 @@ public class Controls : MonoBehaviour
             shoot = false;
         }
     }
+    
+    //Bullet will be reloaded
+    void reload()
+    {
+        if(player.bertil.bullets != maxBullet) player.bertil.bullets++;
+    }
 
     //Spawns a bullet
     void shooting()
     {
-        Instantiate(bullet, transform.position + new Vector3(0.0f,1.0f,0.0f), transform.rotation);
+        if (player.bertil.bullets != 0)
+        {
+            player.bertil.bullets--;
+            Instantiate(bullet, transform.position + new Vector3(0.0f, 1.0f, 0.0f), transform.rotation);
+            Invoke("reload", 1.0f);
+        }
     }
 
     //Controls the player

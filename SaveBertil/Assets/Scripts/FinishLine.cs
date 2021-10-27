@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FinishLine : MonoBehaviour
 {
+    public GameObject playerObject;
     private Rigidbody2D rb;
 
     void Start()
@@ -13,5 +14,18 @@ public class FinishLine : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = Vector2.down * 3;
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "Bertil")
+        {
+            Invoke("delayGameFinish", 0.3f);
+        }
+    }
+
+    void delayGameFinish()
+    {
+        playerObject.GetComponent<SceneHandler>().win();
     }
 }
