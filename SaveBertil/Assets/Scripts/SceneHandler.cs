@@ -3,9 +3,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneHandler : MonoBehaviour
 {
+    string sceneName;
+    void Start()
+    {
+        sceneName = SceneManager.GetActiveScene().name;
+    }
+
     public void gameOver() 
     {
-        SceneManager.LoadScene("GameOverScene");
+        if (sceneName != "TutorialScene")
+        {
+            SceneManager.LoadScene("GameOverScene");
+        }
     }
 
     public void win()
@@ -17,5 +26,11 @@ public class SceneHandler : MonoBehaviour
     {
         Player.score = 0;
         SceneManager.LoadScene("PlayScene");
+    }
+
+    public void tutorial()
+    {
+        Player.score = 0;
+        SceneManager.LoadScene("TutorialScene");
     }
 }

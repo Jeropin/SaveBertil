@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 68353902}
   - component: {fileID: 68353903}
   - component: {fileID: 68353904}
+  - component: {fileID: 1577557437}
   m_Layer: 0
   m_Name: Bertil
   m_TagString: Player
@@ -161,9 +162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 2086209377638145308, guid: 46caf787ca44cba4c8e782707e32f1d6, type: 3}
-  speed: 10
   rb: {fileID: 7379736976706492962}
   movement: {x: 0, y: 0}
+  speed: 10
 --- !u!114 &68353902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,5 +199,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c499de53befffd34f82abda372c347f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1577557437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379736976706492972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21421db96e616b47969cb887fce8286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
