@@ -62,7 +62,7 @@ public class Controls : MonoBehaviour
         if (player.bertil.bullets != 0)
         {
             player.bertil.bullets--;
-            Instantiate(bullet, transform.position + new Vector3(0.0f, 1.0f, 0.0f), transform.rotation);
+            Instantiate(bullet, transform.position + new Vector3(0.0f, 1.55f, 0.0f), transform.rotation);
             Invoke("reload", 1.0f);
         }
     }
