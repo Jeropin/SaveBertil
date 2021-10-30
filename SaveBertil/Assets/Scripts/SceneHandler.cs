@@ -21,6 +21,10 @@ public class SceneHandler : MonoBehaviour
     {
         SceneManager.LoadScene("WinScene");
     }
+    public void story()
+    {
+        SceneManager.LoadScene("StoryScene");
+    }
 
     public void play()
     {

@@ -23,7 +23,7 @@ public class ContinueEvent : MonoBehaviour
             }
             if(sceneName == "IntroScene")
             {
-                sceneHandler.tutorial();
+                sceneHandler.story();
             }
             if(sceneName == "GameOverScene")
             {
@@ -32,6 +32,10 @@ public class ContinueEvent : MonoBehaviour
             if (sceneName == "WinScene")
             {
                 sceneHandler.play();
+            }
+            if(sceneName == "StoryScene")
+            {
+                sceneHandler.tutorial();
             }
 
         }
