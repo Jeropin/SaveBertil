@@ -1,0 +1,17 @@
+using System.Collections;
+using UnityEngine;
+
+public class Exit : MonoBehaviour
+{
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown("escape"))
+        {
+            Debug.Log("I QUIT");
+            Application.Quit();
+        }
+        
+    }
+}
