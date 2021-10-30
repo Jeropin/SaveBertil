@@ -9,11 +9,13 @@ ScriptsOnlyBuild:
     - DestroyOnCollision
     - DestroySelf
     - DisplayScore
+    - DontDestroy
     - Exit
     - FinishLine
     - HealthEvent
     - ObjectSpawner
     - Player
+    - SFXLibrary
     - SaltEvent
     - SceneHandler
     - WaterEvent
@@ -115,6 +117,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -133,6 +139,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3558}
     - Class: 114
       Script: {instanceID: 5190}
+    - Class: 114
+      Script: {instanceID: 39134}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -169,6 +177,10 @@ ScriptsOnlyBuild:
     - Class: 61
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -216,6 +228,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5190}
     - Class: 114
       Script: {instanceID: 5216}
+    - Class: 114
+      Script: {instanceID: 17444}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -300,6 +314,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -310,6 +328,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1926}
     - Class: 114
       Script: {instanceID: 2182}
+    - Class: 114
+      Script: {instanceID: 2202}
     - Class: 114
       Script: {instanceID: 2206}
     - Class: 114
@@ -340,6 +360,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5190}
     - Class: 114
       Script: {instanceID: 5216}
+    - Class: 114
+      Script: {instanceID: 17444}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -494,7 +516,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: fe46a719fd4a5955bff08a5a055a369b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SaltEvent
@@ -566,7 +588,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: fe46a719fd4a5955bff08a5a055a369b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WaterEvent
@@ -980,7 +1002,7 @@ ScriptsOnlyBuild:
     className: Exit
   - hash:
       serializedVersion: 2
-      Hash: bb879f2ab24cf4e2514ab057a4092d28
+      Hash: 6c9ef762e0c7f1d744dfd7d49d065817
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controls
@@ -1020,6 +1042,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 23aca7a7e728d08be4741c81ff563d4e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SFXLibrary
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DontDestroy
   platform: 19
   scenePathNames:
   - Assets/Scenes/IntroScene.unity

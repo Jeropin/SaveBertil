@@ -4,6 +4,7 @@ using UnityEngine;
 public class SaltEvent : MonoBehaviour
 {
     private Player player;
+    public GameObject SFX;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class SaltEvent : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
+            SFX.GetComponent<SFXLibrary>().playSaltGet();
             player.bertil.health--;
         }
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Controls : MonoBehaviour
 {
     public GameObject bullet;
+    public GameObject SFX;
     public Rigidbody2D rb;
     public Vector2 movement;
     Player player;
@@ -61,6 +62,7 @@ public class Controls : MonoBehaviour
     {
         if (player.bertil.bullets != 0)
         {
+            SFX.GetComponent<SFXLibrary>().playBulletShot();
             player.bertil.bullets--;
             Instantiate(bullet, transform.position + new Vector3(0.0f, 1.55f, 0.0f), transform.rotation);
             Invoke("reload", 1.0f);
